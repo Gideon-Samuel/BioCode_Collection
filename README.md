@@ -17,7 +17,7 @@ Python/ # Python scripts
 # Example: Run a script
 source("scripts/R/ScriptName.R")
 
-#### Python Srcipts
+#### Python Scripts
 # Example: Run a Python script
 python scripts/Python/ScriptName.py
 
