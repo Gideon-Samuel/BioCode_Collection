@@ -1,5 +1,17 @@
 # R Script: Summary Statistics and Visualization for GSE70970 RNA-seq - Human dataset
 # - Compute per-gene statistics and visualize expression
+# Installing required packages (Bioconductor/CRAN)
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+if (!requireNamespace("GEOquery", quietly = TRUE)) BiocManager::install("GEOquery")
+if (!requireNamespace("ggplot2", quietly = TRUE)) install.packages("ggplot2")
+if (!requireNamespace("dplyr", quietly = TRUE)) install.packages("dplyr")
+if (!requireNamespace("tidyr", quietly = TRUE)) install.packages("tidyr")
+
+# Loading libraries
+library(GEOquery)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
 
 #Loading packages
 library(GEOquery)
@@ -39,3 +51,4 @@ ggplot(expr_long, aes(x = Gene, y = Expression, fill = Gene)) +
   geom_boxplot() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   ggtitle("Expression of First 20 Genes Across Samples")
+
