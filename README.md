@@ -23,4 +23,4 @@ python scripts/Python/ScriptName.py
 
 Author
 Gideon Samuel - MSc Bioinformatics
-Email: gideonsamuelj23@gmsil.com
+Email: gideonsamuelj23@gmail.com
